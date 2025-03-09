@@ -9,7 +9,6 @@
 
 body {
     background-color: black;
-    color: #00ff00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,36 +16,107 @@ body {
     padding: 20px;
 }
 
+/* TERMINAL */
 .terminal {
     width: 90%;
     max-width: 800px;
-    border: 3px solid #00ff00;
-    padding: 20px;
     background-color: black;
-    box-shadow: 0 0 10px #00ff00;
+    border: 3px solid #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.header {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+/* HEADER TERMINAL */
+.terminal-header {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 8px 15px;
+    width: 100%;
 }
 
-.content {
-    font-size: 1em;
-    line-height: 1.6;
+.buttons {
+    display: flex;
+    gap: 5px;
 }
 
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff5f57;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #28c840;
+}
+
+.terminal-title {
+    color: #00ff00;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+/* BODY TERMINAL */
+.terminal-body {
+    padding: 20px;
+    color: #00ff00;
+}
+
+/* TEKS STYLING */
 .ascii {
     font-size: 2em;
     font-weight: bold;
-    white-space: pre;
-    color: #00ff00;
     text-shadow: 0 0 10px #00ff00;
 }
 
 .command {
-    color: #00ff00;
     font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* LIST STYLING */
+.list {
+    list-style: none;
+    line-height: 1;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: -3px;
+    padding: 0;
+}
+
+.list li::before {
+    content: "•";
+    color: #00ff00;
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+.list li:hover {
+    animation: moveText 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
 }
 
 a {
@@ -58,6 +128,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* WARNA KHUSUS */
 .gold {
     color: gold;
 }
@@ -68,4 +139,25 @@ a:hover {
 
 .bronze {
     color: #cd7f32;
+}
+
+/* KURSOR BERKEDIP */
+.cursor {
+    display: inline-block;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

@@ -4,38 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Hacker Style</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Terminal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <div class="terminal">
-        <div class="header">
-            <span class="green">dzuiizz@portfolio</span> ~
+        <div class="terminal-header">
+            <div class="buttons">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <span class="terminal-title">rifqi@portfolio ~</span>
         </div>
+        <div class="terminal-body">
+            <h1 class="ascii">Rifqi AR</h1><br>
 
-        <div class="content">
-            <h1 class="ascii">DZUIZZ</h1>
+            <p class="command">>> cat about.txt</p>
+            <p><strong>name:</strong> Rifqi Anshari R</p>
+            <p><strong>field:</strong> Data Science, Machine Learning, Software Development</p>
+            <p><strong>lan.:</strong> Python, Javascript, C++, SQL</p><br>
 
-            <p class="command">cat about.txt</p>
-            <p><strong>Nama:</strong> Nama Kamu</p>
-            <p><strong>Bidang:</strong> Data Science, Machine Learning</p>
-            <p><strong>Quote:</strong> "I think my life through code, and code through my life."</p>
+            <p class="command">>> cat projects.json | highlight</p>
+            <ul class="list">
+                <li><a href="https://www.youtube.com" target="_blank" class="gold">Project 1</a></li>
+                <li><a href="https://www.youtube.com" target="_blank" class="silver">Project 2</a></li>
+                <li><a href="https://www.youtube.com" target="_blank" class="bronze">Project 3</a></li>
+            </ul><br>
 
-            <p class="command">cat achievements.json | highlight</p>
-            <ul>
-                <li>🏆 <span class="gold">Juara 1 Kompetisi AI Nasional</span></li>
-                <li>📜 <span class="silver">Sertifikasi Microsoft Azure AI</span></li>
-                <li>💻 <span class="bronze">Finalis Hackathon Data Science</span></li>
-            </ul>
+            <p class="command">>> cat contacts.txt</p>
+            <p>📧 <a href="mailto:emailkamu@gmail.com">emailkamu@gmail.com</a></p>
+            <p>💼 <a href="https://www.linkedin.com/in/username/" target="_blank">LinkedIn</a></p><br>
 
-            <p class="command">cat contacts.txt</p>
-            <p>📧 <a href="mailto:emailkamu@gmail.com" target="_blank">emailkamu@gmail.com</a></p>
-            <p>💼 <a href="https://www.linkedin.com/in/username/" target="_blank">LinkedIn</a></p>
+            <p class="cursor">█</p>
         </div>
     </div>
-
 </body>
 
 </html>
