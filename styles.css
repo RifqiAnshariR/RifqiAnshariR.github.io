@@ -1,25 +1,56 @@
-/* Menggunakan tema terminal retro */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+}
+
 body {
     background-color: black;
-    color: #33ff33;
-    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     padding: 20px;
-    line-height: 1.5;
 }
 
-h1 {
-    font-size: 32px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #33ff33;
-    padding-bottom: 5px;
+.terminal {
+    width: 90%;
+    max-width: 800px;
+    border: 3px solid #00ff00;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px #00ff00;
 }
 
-p {
-    font-size: 18px;
+.header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.content {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.ascii {
+    font-size: 2em;
+    font-weight: bold;
+    white-space: pre;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.command {
+    color: #00ff00;
+    font-weight: bold;
 }
 
 a {
-    color: #33ff33;
+    color: #00ff00;
     text-decoration: none;
 }
 
@@ -27,20 +58,14 @@ a:hover {
     text-decoration: underline;
 }
 
-.terminal-box {
-    border: 2px solid #33ff33;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    max-width: 800px;
+.gold {
+    color: gold;
 }
 
-.terminal-box ul {
-    list-style-type: none;
-    padding-left: 0;
+.silver {
+    color: silver;
 }
 
-.terminal-box li::before {
-    content: '> ';
-    color: #33ff33;
+.bronze {
+    color: #cd7f32;
 }
