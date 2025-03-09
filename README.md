@@ -5,10 +5,10 @@ This is a simple personal portfolio website designed with a **terminal-style** t
 # 🚀 How to Run  
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/yourusername/portfolio-terminal.git  
+   git clone https://github.com/RifqiAnshariR/RifqiAnshariR.github.io.git  
    cd portfolio-terminal  
    ```  
-2. Open `index.html` in your browser.  
+2. Open `index.html` file, or `https://rifqiansharir.github.io/` in your browser.  
 3. To modify the styles, edit `styles.css`.  
 
 # ➕ Miscellaneous
