@@ -1,0 +1,46 @@
+/* Menggunakan tema terminal retro */
+body {
+    background-color: black;
+    color: #33ff33;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #33ff33;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: #33ff33;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.terminal-box {
+    border: 2px solid #33ff33;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 800px;
+}
+
+.terminal-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.terminal-box li::before {
+    content: '> ';
+    color: #33ff33;
+}
