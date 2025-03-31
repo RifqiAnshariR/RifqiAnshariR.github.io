@@ -8,6 +8,7 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -17,8 +18,7 @@ body {
 
 /* TERMINAL */
 .terminal {
-    min-height: 100vh;
-    min-width: 90vw;
+    width: 600px;
     background-color: black;
     border: 3px solid #00ff00;
     box-shadow: 0 0 15px #00ff00;
@@ -153,5 +153,25 @@ a:hover {
 
     100% {
         opacity: 1;
+    }
+}
+
+/* Media query untuk layar kecil (misalnya, di bawah 600px) */
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 12px;
+    }
+
+    body {
+        min-height: 50vh;
+    }
+
+    .ascii pre {
+        font-size: 10px;
+        margin-left: -70px;
+    }
+
+    .terminal {
+        min-width: 100vw;
     }
 }
