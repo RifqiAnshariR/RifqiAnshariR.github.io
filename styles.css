@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 15.8px;
+    line-height: 1.3;
 }
 
 body {
@@ -18,8 +18,8 @@ body {
 
 /* TERMINAL */
 .terminal {
-    width: 90%;
-    max-width: 800px;
+    width: 70%;
+    max-width: 620px;
     background-color: black;
     border: 3px solid #00ff00;
     box-shadow: 0 0 15px #00ff00;
@@ -62,51 +62,57 @@ body {
 .terminal-title {
     color: #00ff00;
     margin-left: auto;
-    font-weight: bold;
 }
 
 /* BODY TERMINAL */
 .terminal-body {
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
     color: #00ff00;
 }
 
 /* TEKS STYLING */
-.ascii {
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 0 0 10px #00ff00;
+.ascii pre {
+    font-size: 13px;
+    line-height: 1.2;
+    margin-left: -85px;
 }
 
 .command {
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
-/* LIST STYLING */
-.list {
-    list-style: none;
-    line-height: 1;
+.command-box {
+    border: 1px solid rgb(75, 75, 75);
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(0, 255, 0, 0.1);
 }
 
+/* LIST STYLING */
 .list li {
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin-bottom: -3px;
+    gap: 3px;
     padding: 0;
 }
 
 .list li::before {
-    content: "•";
+    content: "→";
     color: #00ff00;
-    font-size: 1.5em;
     margin-right: 8px;
 }
 
 .list li:hover {
     animation: moveText 0.3s ease-in-out infinite alternate;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 @keyframes moveText {
@@ -128,24 +134,11 @@ a:hover {
     text-decoration: underline;
 }
 
-/* WARNA KHUSUS */
-.gold {
-    color: gold;
-}
-
-.silver {
-    color: silver;
-}
-
-.bronze {
-    color: #cd7f32;
-}
-
 /* KURSOR BERKEDIP */
 .cursor {
     display: inline-block;
     font-weight: bold;
-    animation: blink 1s infinite;
+    animation: blink 1.8s infinite;
 }
 
 @keyframes blink {
