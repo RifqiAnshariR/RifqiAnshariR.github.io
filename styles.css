@@ -12,14 +12,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 20px;
 }
 
 /* TERMINAL */
 .terminal {
-    width: 70%;
-    max-width: 620px;
+    min-height: 100vh;
+    min-width: 90vw;
     background-color: black;
     border: 3px solid #00ff00;
     box-shadow: 0 0 15px #00ff00;
@@ -75,6 +74,7 @@ body {
     font-size: 13px;
     line-height: 1.2;
     margin-left: -85px;
+    margin-bottom: -10px;
 }
 
 .command {
@@ -136,9 +136,10 @@ a:hover {
 
 /* KURSOR BERKEDIP */
 .cursor {
-    display: inline-block;
     font-weight: bold;
     animation: blink 1.8s infinite;
+    position: relative;
+    top: 1px;
 }
 
 @keyframes blink {
